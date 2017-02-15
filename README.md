@@ -21,6 +21,17 @@ Now you can scrape this collector adding this configuration into prometheus.conf
 	}
 ```
 
+# Replacing Tags/Labels #
+If you want to replaces some tags or Labels.
+
+
+```shell
+prometheus_scollector \
+    -http=0.0.0.0:9107 \
+    -replace-label="oldLabel:newLabel;oldLabel2:newLabel2"
+```
+
+
 # Testing #
 For testing purpose you need scollector binary.
 
